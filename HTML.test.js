@@ -27,3 +27,6 @@ Deno.test("decode no defines", () => {
   t.assertEquals(HTML.decode("&aa;"), "&aa;");
   t.assertEquals(HTML.decode("&ab&aa;"), "&ab&aa;");
 });
+Deno.test("helip", () => {
+  t.assertEquals(HTML.decode("&hellip;"), "…");
+});

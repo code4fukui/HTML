@@ -1,3 +1,5 @@
+// https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references
+
 const spchars = {
   gt: ">",
   lt: "<",
@@ -13,6 +15,7 @@ const spchars = {
   deg: "°",
   nbsp: " ",
   hookleftarrow: "↩",
+  hellip: "…",
 };
 
 export const HTML = {
