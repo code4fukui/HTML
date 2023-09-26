@@ -30,3 +30,12 @@ Deno.test("decode no defines", () => {
 Deno.test("helip", () => {
   t.assertEquals(HTML.decode("&hellip;"), "…");
 });
+Deno.test("ldquo", () => {
+  t.assertEquals(HTML.decode("&ldquo;"), "\u201C");
+});
+Deno.test("arrow", () => {
+  t.assertEquals(HTML.decode("&rarr;&larr;"), "→←");
+});
+Deno.test("crarr", () => {
+  t.assertEquals(HTML.decode("&crarr;"), "↵");
+});

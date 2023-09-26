@@ -12,10 +12,14 @@ const spchars = {
   lsquo: "‘",
   sbquo: "“",
   rdquo: "”",
+  ldquo: "\u201C",
   deg: "°",
   nbsp: " ",
   hookleftarrow: "↩",
+  crarr: "↵",
   hellip: "…",
+  rarr:	"→",
+  larr: "←",
 };
 
 export const HTML = {
