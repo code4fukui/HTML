@@ -71,7 +71,10 @@ export const HTML = {
     return res.join("");
   },
   encode(s) {
-    return s.replace(/&/g, "&amp;");
+    s = s.replace(/&/g, "&amp;");
+    s = s.replace(/</g, "&lt;");
+    s = s.replace(/>/g, "&gt;");
+    return s;
   },
   getSpecialChars() {
     return spchars;

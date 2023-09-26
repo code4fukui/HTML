@@ -6,6 +6,9 @@ Deno.test("encode", () => {
   t.assertEquals(HTML.encode("a&bc"), "a&amp;bc");
   t.assertEquals(HTML.encode("a&b&c"), "a&amp;b&amp;c");
   t.assertEquals(HTML.encode("a&&c"), "a&amp;&amp;c");
+  t.assertEquals(HTML.encode("<a>"), "&lt;a&gt;");
+  t.assertEquals(HTML.encode("b&<a>"), "b&amp;&lt;a&gt;");
+  t.assertEquals(HTML.encode("&amp;"), "&amp;amp;");
 });
 Deno.test("decode", () => {
   t.assertEquals(HTML.decode("abc"), "abc");
