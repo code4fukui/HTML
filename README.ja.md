@@ -1,8 +1,8 @@
 # HTML
 
-A simple library to encode and decode HTML entities.
+HTMLにおける文字列のエンコーディングやデコーディングを行うユーティリティです。
 
-## Usage
+## 使い方
 
 ```js
 import { HTML } from "https://code4fukui.github.io/HTML/HTML.js";
@@ -14,7 +14,7 @@ console.log(HTML.decode("&gt;&lt;")); // ><
 console.log(HTML.decode("&crarr;")); // ↵
 ```
 
-## License
+## ライセンス
 
 MIT License
 
