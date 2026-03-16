@@ -18,4 +18,4 @@ console.log(HTML.decode("&crarr;")); // ↵
 
 ## License
 
-See [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](LICENSE).
